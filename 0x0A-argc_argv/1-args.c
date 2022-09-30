@@ -15,5 +15,5 @@ int main(int argc, char *argv[] __attribute__((unused)))
 
 	return (0);
 }
-Footer
-© 2022 GitHub, Inc.
+
+
