@@ -11,7 +11,7 @@
 
 int main(int argc, char *argv[])
 {
-	int n, coins = 0;
+	int n, cents= 0;
 
 	/* validate input */
 	if (argc != 2)
@@ -29,16 +29,16 @@ int main(int argc, char *argv[])
 	/* convert string to int and calculate coins */
 	n = atoi(argv[1]);
 
-	coins += n / 25;
+	cents += n / 25;
 	n = n % 25;
-	coins += n / 10;
+	cents += n / 10;
 	n = n % 10;
-	coins += n / 5;
+	cents += n / 5;
 	n = n % 5;
-	coins += n / 2;
+	cents += n / 2;
 	n = n % 2;
-	coins += n / 1;
+	cents += n / 1;
 
-	printf("%d\n", coins);
+	printf("%d\n", cents);
 	return (0);
 }
